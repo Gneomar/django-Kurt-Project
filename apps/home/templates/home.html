@@ -6,42 +6,43 @@
     <title>{{ title }}</title>
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'home/styles.css' %}">
+    <link rel="icon" type="image/jpg" href="static/home/logo.jpg">
 </head>
 <body>
-    <header>
-        <h1>Civil Enginering & Data Analytics</h1>
-    </header>
+    <div class="wrapper">
+        <header>
+            <h1>Civil Enginering & Data AnalyticsS</h1>
+        </header>
 
-    
-    <div class="container">
-        <div class="profile">
-            <img src="static/home/logo.jpg" alt="Foto de perfil">
-            <div class="description">
-                <h2>{{ author }}</h2>
-                <p>
-                    Sostengo conocimiento y aplicación de diversos softwares para diseño y calculo estructural de edificaciones de concreto armado. Busco optimizar tiempos a través de la programación y la automatización de los procesos.
-                </p>
+        <div class="container">
+            <div class="profile">
+                <img src="static/home/logo.jpg" alt="Foto de perfil">
+                <div class="description">
+                    <h2>{{ author }}</h2>
+                    <p>
+                        Sostengo conocimiento y aplicación de diversos softwares para diseño y calculo estructural de edificaciones de concreto armado. Busco optimizar tiempos a través de la programación y la automatización de los procesos.
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <div class="date" id="date">
-            <!-- Aquí se mostrará la fecha actual -->
-        </div>
+            <div class="date" id="date">
+                <!-- Aquí se mostrará la fecha actual -->
+            </div>
 
-        <div class="projects">
-            <h2>Proyectos Realizados</h2>
-            <div class="project-item">
-                <h3>Proyecto 1</h3>
-                <p>Descripción del proyecto 1.</p>
+            <div class="projects">
+                <h2>Proyectos Realizados</h2>
+                <div class="project-item">
+                    <h3>Proyecto 1</h3>
+                    <p>Descripción del proyecto 1.</p>
+                </div>
+                <div class="project-item">
+                    <h3>Proyecto 2</h3>
+                    <p>Descripción del proyecto 2.</p>
+                </div>
+                <!-- Agrega más proyectos según sea necesario -->
             </div>
-            <div class="project-item">
-                <h3>Proyecto 2</h3>
-                <p>Descripción del proyecto 2.</p>
-            </div>
-            <!-- Agrega más proyectos según sea necesario -->
         </div>
     </div>
-
     <footer>
         <p>© 2024 {{ author }}. Todos los derechos reservados.</p>
     </footer>
